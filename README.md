@@ -90,3 +90,11 @@ Ao longo da aplicação é esperado que sigamos a convenção camelCase para nom
 # Ownership do repositório
 
 O repositório é de propriedade da equipe de Simulação e Proposta.
+
+# TODO
+
+- [ ] Adicionar New Relic
+- [ ] Adicionar camada de autenticação
+- [ ] Adicionar testes unitários
+- [ ] Adicionar configuração de CI/CD
+- [ ] Adicionar configuração de logs
