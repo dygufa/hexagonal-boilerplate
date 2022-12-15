@@ -9,7 +9,7 @@ Esse serviço provê uma API para simular as condições de um financiamento a p
 3. Inicie o banco de dados através do docker-compose, executando: `docker-compose up -d`
 4. Define as variáveis de ambiente em `.env`, conforme o arquivo `.env.example`
 5. Execute as migrations do banco de dados: `npm run migration:run`
-6. Execute a aplicação utilizando `npm run start`
+6. Execute a aplicação utilizando `npm run start:dev`
 7. Por padrao a aplicação será disponibilizada na porta `3000`, nesse cenário, acesse: `http://localhost:3000/`
 8. Acesse `http://localhost:3000/api` para visualizar a documentação da API
 
