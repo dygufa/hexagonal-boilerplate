@@ -31,6 +31,7 @@
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/swagger": "^6.1.2",
     "@nestjs/typeorm": "^9.0.1",
+    "dotenv": "^16.0.3",
     "newrelic": "^9.2.0",
     "pg": "^8.8.0",
     "reflect-metadata": "^0.1.13",
@@ -77,6 +78,10 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "engines": {
+      "node": ">=18",
+      "npm": ">=8"
+  }
   }
 }
