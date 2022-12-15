@@ -1,4 +1,5 @@
 import { DynamicModule, Module } from "@nestjs/common";
+import { ConfigModule } from "@nestjs/config";
 import { LoanCalculatorAdapter } from "src/adapters/loanCalculator/loanCalculator";
 import { TypeOrmConfigModule } from "src/adapters/repository/typeorm/config/typeormConfig.module";
 import SimulationRepositoryTypeORM from "src/adapters/repository/typeorm/simulation.repository.typeorm";
@@ -14,6 +15,11 @@ export class ConfigServiceModule {
     static register(): DynamicModule {
         return {
             module: ConfigServiceModule,
+            imports: [
+                ConfigModule.forRoot({
+                    isGlobal: true,
+                }),
+            ],
             providers: [
                 {
                     inject: [SimulationRepositoryTypeORM, LoanCalculatorAdapter],
