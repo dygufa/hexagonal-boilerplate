@@ -1,8 +1,8 @@
 import { Body, Controller, Post, Inject } from "@nestjs/common";
 import { CreateSimulationDTO } from "./createSimulation.dto";
-import { SimulateService } from "src/useCases/simulateService/simulateService";
+import { SimulateService } from "../../../useCases/simulateService/simulateService";
 import { ConfigServiceModule } from "../config/configService.module";
-import { Simulation } from "src/domain/simulation/simulation";
+import { Simulation } from "../../../domain/simulation/simulation";
 
 @Controller("simulation")
 export class SimulationController {

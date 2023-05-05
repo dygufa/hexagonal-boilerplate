@@ -1,7 +1,7 @@
-import { Simulation } from "src/domain/simulation/simulation";
-import { CreateSimulation } from "src/domain/simulation/createSimulation";
-import { SimulationRepository } from "src/domain/ports/simulation.repository";
-import { LoanCalculator } from "src/domain/ports/loanCalculator";
+import { Simulation } from "../../domain/simulation/simulation";
+import { CreateSimulation } from "../../domain/simulation/createSimulation";
+import { SimulationRepository } from "../../domain/ports/simulation.repository";
+import { LoanCalculator } from "../../domain/ports/loanCalculator";
 
 export class SimulateService {
     constructor(
