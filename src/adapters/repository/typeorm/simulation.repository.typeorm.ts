@@ -1,11 +1,11 @@
 import { Injectable, Logger } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { Simulation } from "src/domain/simulation/simulation";
-import { CreateSimulation } from "src/domain/simulation/createSimulation";
-import { SimulationRepository } from "src/domain/ports/simulation.repository";
+import { Simulation } from "../../../domain/simulation/simulation";
+import { CreateSimulation } from "../../../domain/simulation/createSimulation";
+import { SimulationRepository } from "../../../domain/ports/simulation.repository";
 import { Repository } from "typeorm";
 import { SimulationEntity } from "./entities/simulation.entity";
-import { LoanCalculatorResponse } from "src/domain/loanCalculatorResponse";
+import { LoanCalculatorResponse } from "../../../domain/loanCalculatorResponse";
 
 @Injectable()
 export default class SimulationRepositoryTypeORM implements SimulationRepository {

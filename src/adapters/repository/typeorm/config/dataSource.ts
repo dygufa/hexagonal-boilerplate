@@ -1,3 +1,6 @@
+import * as dotenv from "dotenv";
+dotenv.config();
+
 import { DataSource, DataSourceOptions } from "typeorm";
 
 export const SIMULATION_DB_CONFIG: DataSourceOptions = {
